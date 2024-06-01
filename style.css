@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 20px;
+}
+h1, h2 {
+    color: #BB86FC;
+    cursor: pointer;
+    user-select: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1F1F1F;
+    display: none; /* Initially hide all tables */
+    transition: all 0.3s ease;
+}
+th, td {
+    border: 1px solid #BB86FC;
+    padding: 8px;
+    text-align: center;
+}
+.chinese {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+tr:hover {
+    background-color: #333333;
+}
+tr:nth-child(even) {
+    background-color: #2A2A2A;
+}
+tr:nth-child(even):hover {
+    background-color: #333333;
+}
+tr:nth-child(odd):hover {
+    background-color: #2A2A2A;
+}
+th {
+    background-color: #3700B3;
+    color: #E0E0E0;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
