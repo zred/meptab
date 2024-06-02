@@ -1,5 +1,8 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* Base styles */
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #121212;
@@ -7,11 +10,13 @@ body {
     margin: 0;
     padding: 20px;
 }
+
 h1, h2 {
     color: #BB86FC;
     cursor: pointer;
     user-select: none;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -19,30 +24,73 @@ table {
     background-color: #1F1F1F;
     display: none; /* Initially hide all tables */
     transition: all 0.3s ease;
+    overflow-x: auto; /* Make tables scrollable horizontally */
 }
+
+/* Table row hover and striping */
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #333333;
+}
+
+tr:nth-child(even) {
+    background-color: #2A2A2A;
+}
+
+tr:nth-child(even):hover {
+    background-color: #333333;
+}
+
+tr:nth-child(odd):hover {
+    background-color: #2A2A2A;
+}
+
 th, td {
     border: 1px solid #BB86FC;
     padding: 8px;
     text-align: center;
 }
-.chinese {
-    font-family: 'Noto Sans SC', sans-serif;
-}
-tr:hover {
-    background-color: #333333;
-}
-tr:nth-child(even) {
-    background-color: #2A2A2A;
-}
-tr:nth-child(even):hover {
-    background-color: #333333;
-}
-tr:nth-child(odd):hover {
-    background-color: #2A2A2A;
-}
+
+/* Column styling */
 th {
     background-color: #3700B3;
     color: #E0E0E0;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    th, td {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+
+    table {
+        display: block; /* Allow scrolling */
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Input search styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #BB86FC;
+    border-radius: 4px;
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Noto Sans', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3700B3;
+    outline: none;
 }
