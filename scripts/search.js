@@ -6,6 +6,10 @@ export function addSearchFunctionality() {
     const query = this.value.toLowerCase();
     searchResultsTableBody.innerHTML = ''; // Clear previous results
 
+    if (query === '') {
+      return; // Exit the function if the search box is empty
+    }
+
     const tables = document.querySelectorAll('tbody');
 
     tables.forEach(table => {
