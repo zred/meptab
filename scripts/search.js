@@ -1,8 +1,11 @@
 export function addSearchFunctionality() {
   const searchInput = document.getElementById('searchInput');
+  const searchResultsTableBody = document.getElementById('searchResultsTableBody');
 
   searchInput.addEventListener('input', function() {
     const query = this.value.toLowerCase();
+    searchResultsTableBody.innerHTML = ''; // Clear previous results
+
     const tables = document.querySelectorAll('tbody');
 
     tables.forEach(table => {
@@ -10,7 +13,10 @@ export function addSearchFunctionality() {
       rows.forEach(row => {
         const cells = Array.from(row.children);
         const match = cells.some(cell => cell.textContent.toLowerCase().includes(query));
-        row.style.display = match ? '' : 'none';
+        if (match) {
+          const newRow = row.cloneNode(true);
+          searchResultsTableBody.appendChild(newRow);
+        }
       });
     });
   });
