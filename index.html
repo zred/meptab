@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEP Tab</title>
+  <title>Mandarin English Pinyin Tables</title>
   <link rel="stylesheet" href="style.css">
-  <!-- script type="module" src="scripts/main.js"</script -->
+  <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-  <!-- Container for dynamically generated tables -->
-  <div id="table-container"></div>
-
-  <!-- Include the JavaScript file to generate tables dynamically -->
-  <script src="scripts/generateTables.js"></script>
+  <h1>Mandarin</h1>
+  <!-- <script src="scripts/renderTable.js"</script> -->
+  <input type="text" id="searchInput" placeholder="Search vocabulary..." />
+  <div id="tablesContainer"></div>
+  <h2>Search Results</h2>
+  <table id="searchResultsTable">
+    <thead>
+      <tr>
+        <th>Mandarin</th>
+        <th>English</th>
+        <th>Pinyin</th>
+      </tr>
+    </thead>
+    <tbody id="searchResultsTableBody">
+      <!-- Search results will be dynamically added here -->
+    </tbody>
+  </table>
 </body>
 </html>
