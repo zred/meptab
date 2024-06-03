@@ -4,14 +4,14 @@ export async function renderTable() {
   try {
     const vocabulary = await fetchVocabulary();
 
-    if (!vocabulary.categories) {
+    if (!vocabulary || !Array.isArray(vocabulary)) {
       throw new Error('Vocabulary data is empty or not in the expected format');
     }
 
     const container = document.getElementById('tablesContainer');
     container.innerHTML = ''; // Clear existing tables
 
-    vocabulary.categories.forEach(category => {
+    vocabulary.forEach(category => {
       // Add an h2 tag for the category name
       const caption = document.createElement('h2');
       caption.textContent = category.name;

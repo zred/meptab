@@ -1,0 +1,106 @@
+{
+    "id": "actions",
+    "name": "Actions",
+    "data": [
+        {
+            "mandarin": "走",
+            "english": "walk",
+            "pinyin": "zǒu"
+        },
+        {
+            "mandarin": "跑",
+            "english": "run",
+            "pinyin": "pǎo"
+        },
+        {
+            "mandarin": "跳",
+            "english": "jump",
+            "pinyin": "tiào"
+        },
+        {
+            "mandarin": "飞",
+            "english": "fly",
+            "pinyin": "fēi"
+        },
+        {
+            "mandarin": "游泳",
+            "english": "swim",
+            "pinyin": "yóuyǒng"
+        },
+        {
+            "mandarin": "爬",
+            "english": "climb",
+            "pinyin": "pá"
+        },
+        {
+            "mandarin": "爬行",
+            "english": "crawl",
+            "pinyin": "páxíng"
+        },
+        {
+            "mandarin": "滑",
+            "english": "slide",
+            "pinyin": "huá"
+        },
+        {
+            "mandarin": "坐",
+            "english": "sit",
+            "pinyin": "zuò"
+        },
+        {
+            "mandarin": "站",
+            "english": "stand",
+            "pinyin": "zhàn"
+        },
+        {
+            "mandarin": "躺",
+            "english": "lie down",
+            "pinyin": "tǎng"
+        },
+        {
+            "mandarin": "起床",
+            "english": "get up",
+            "pinyin": "qǐchuáng"
+        },
+        {
+            "mandarin": "睡觉",
+            "english": "sleep",
+            "pinyin": "shuìjiào"
+        },
+        {
+            "mandarin": "吃",
+            "english": "eat",
+            "pinyin": "chī"
+        },
+        {
+            "mandarin": "喝",
+            "english": "drink",
+            "pinyin": "hē"
+        },
+        {
+            "mandarin": "看",
+            "english": "look",
+            "pinyin": "kàn"
+        },
+        {
+            "mandarin": "听",
+            "english": "listen",
+            "pinyin": "tīng"
+        },
+        {
+            "mandarin": "说",
+            "english": "speak",
+            "pinyin": "shuō"
+        },
+        {
+            "mandarin": "写",
+            "english": "write",
+            "pinyin": "xiě"
+        },
+        {
+            "mandarin": "读",
+            "english": "read",
+            "pinyin": "dú"
+        }
+    ]
+}

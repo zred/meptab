@@ -1,13 +1,28 @@
 export async function fetchVocabulary() {
-  try {
-    const response = await fetch('../data/new_vocabulary.json');
-    if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Failed to fetch vocabulary data:', error);
-    return [];
+  const dataDirectory = './data/dataFiles.json'; // Path to the JSON file list
+  const response = await fetch(dataDirectory);
+  
+  if (!response.ok) {
+    throw new Error(`Failed to load file list: ${response.statusText}`);
   }
+  
+  const files = await response.json();
+
+  let combinedData = [];
+
+  for (const file of files) {
+    if (file.endsWith('.json')) {
+      const filePath = `./data/${file}`;
+      const fileResponse = await fetch(filePath);
+      
+      if (!fileResponse.ok) {
+        throw new Error(`Failed to load ${file}: ${fileResponse.statusText}`);
+      }
+      
+      const data = await fileResponse.json();
+      combinedData.push(data);
+    }
+  }
+
+  return combinedData;
 }

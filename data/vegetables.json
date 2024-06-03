@@ -1,0 +1,106 @@
+{
+    "id": "vegetables",
+    "name": "Vegetables",
+    "data": [
+        {
+            "mandarin": "西红柿",
+            "english": "tomato",
+            "pinyin": "xīhóngshì"
+        },
+        {
+            "mandarin": "胡萝卜",
+            "english": "carrot",
+            "pinyin": "húluóbo"
+        },
+        {
+            "mandarin": "生菜",
+            "english": "lettuce",
+            "pinyin": "shēngcài"
+        },
+        {
+            "mandarin": "黄瓜",
+            "english": "cucumber",
+            "pinyin": "huángguā"
+        },
+        {
+            "mandarin": "菠菜",
+            "english": "spinach",
+            "pinyin": "bōcài"
+        },
+        {
+            "mandarin": "土豆",
+            "english": "potato",
+            "pinyin": "tǔdòu"
+        },
+        {
+            "mandarin": "洋葱",
+            "english": "onion",
+            "pinyin": "yángcōng"
+        },
+        {
+            "mandarin": "青椒",
+            "english": "green pepper",
+            "pinyin": "qīngjiāo"
+        },
+        {
+            "mandarin": "茄子",
+            "english": "eggplant",
+            "pinyin": "qiézi"
+        },
+        {
+            "mandarin": "西兰花",
+            "english": "broccoli",
+            "pinyin": "xīlánhuā"
+        },
+        {
+            "mandarin": "蘑菇",
+            "english": "mushroom",
+            "pinyin": "mógu"
+        },
+        {
+            "mandarin": "卷心菜",
+            "english": "cabbage",
+            "pinyin": "juǎnxīncài"
+        },
+        {
+            "mandarin": "芹菜",
+            "english": "celery",
+            "pinyin": "qíncài"
+        },
+        {
+            "mandarin": "花菜",
+            "english": "cauliflower",
+            "pinyin": "huācài"
+        },
+        {
+            "mandarin": "豆角",
+            "english": "green beans",
+            "pinyin": "dòujiǎo"
+        },
+        {
+            "mandarin": "南瓜",
+            "english": "pumpkin",
+            "pinyin": "nánguā"
+        },
+        {
+            "mandarin": "红薯",
+            "english": "sweet potato",
+            "pinyin": "hóngshǔ"
+        },
+        {
+            "mandarin": "玉米",
+            "english": "corn",
+            "pinyin": "yùmǐ"
+        },
+        {
+            "mandarin": "辣椒",
+            "english": "chili pepper",
+            "pinyin": "làjiāo"
+        },
+        {
+            "mandarin": "豌豆",
+            "english": "pea",
+            "pinyin": "wāndòu"
+        }
+    ]
+}

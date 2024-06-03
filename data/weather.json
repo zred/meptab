@@ -1,0 +1,106 @@
+{
+    "id": "weather",
+    "name": "Weather",
+    "data": [
+        {
+            "mandarin": "晴天",
+            "english": "sunny",
+            "pinyin": "qíngtiān"
+        },
+        {
+            "mandarin": "阴天",
+            "english": "cloudy",
+            "pinyin": "yīntiān"
+        },
+        {
+            "mandarin": "雨天",
+            "english": "rainy",
+            "pinyin": "yǔtiān"
+        },
+        {
+            "mandarin": "雪天",
+            "english": "snowy",
+            "pinyin": "xuětiān"
+        },
+        {
+            "mandarin": "风",
+            "english": "windy",
+            "pinyin": "fēng"
+        },
+        {
+            "mandarin": "雾",
+            "english": "foggy",
+            "pinyin": "wù"
+        },
+        {
+            "mandarin": "雷",
+            "english": "thunder",
+            "pinyin": "léi"
+        },
+        {
+            "mandarin": "闪电",
+            "english": "lightning",
+            "pinyin": "shǎndiàn"
+        },
+        {
+            "mandarin": "冷",
+            "english": "cold",
+            "pinyin": "lěng"
+        },
+        {
+            "mandarin": "热",
+            "english": "hot",
+            "pinyin": "rè"
+        },
+        {
+            "mandarin": "温暖",
+            "english": "warm",
+            "pinyin": "wēnnuǎn"
+        },
+        {
+            "mandarin": "凉爽",
+            "english": "cool",
+            "pinyin": "liángshuǎng"
+        },
+        {
+            "mandarin": "暴风雨",
+            "english": "storm",
+            "pinyin": "bàofēngyǔ"
+        },
+        {
+            "mandarin": "冰雹",
+            "english": "hail",
+            "pinyin": "bīngbáo"
+        },
+        {
+            "mandarin": "台风",
+            "english": "typhoon",
+            "pinyin": "táifēng"
+        },
+        {
+            "mandarin": "龙卷风",
+            "english": "tornado",
+            "pinyin": "lóngjuǎnfēng"
+        },
+        {
+            "mandarin": "阵雨",
+            "english": "shower",
+            "pinyin": "zhènyǔ"
+        },
+        {
+            "mandarin": "湿度",
+            "english": "humidity",
+            "pinyin": "shīdù"
+        },
+        {
+            "mandarin": "气温",
+            "english": "temperature",
+            "pinyin": "qìwēn"
+        },
+        {
+            "mandarin": "气候",
+            "english": "climate",
+            "pinyin": "qìhòu"
+        }
+    ]
+}

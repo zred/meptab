@@ -1,0 +1,106 @@
+{
+    "id": "polar_descriptors",
+    "name": "Polar Descriptors",
+    "data": [
+        {
+            "mandarin": "大",
+            "english": "big",
+            "pinyin": "dà"
+        },
+        {
+            "mandarin": "小",
+            "english": "small",
+            "pinyin": "xiǎo"
+        },
+        {
+            "mandarin": "热",
+            "english": "hot",
+            "pinyin": "rè"
+        },
+        {
+            "mandarin": "冷",
+            "english": "cold",
+            "pinyin": "lěng"
+        },
+        {
+            "mandarin": "快",
+            "english": "fast",
+            "pinyin": "kuài"
+        },
+        {
+            "mandarin": "慢",
+            "english": "slow",
+            "pinyin": "màn"
+        },
+        {
+            "mandarin": "高",
+            "english": "high",
+            "pinyin": "gāo"
+        },
+        {
+            "mandarin": "低",
+            "english": "low",
+            "pinyin": "dī"
+        },
+        {
+            "mandarin": "重",
+            "english": "heavy",
+            "pinyin": "zhòng"
+        },
+        {
+            "mandarin": "轻",
+            "english": "light (weight)",
+            "pinyin": "qīng"
+        },
+        {
+            "mandarin": "亮",
+            "english": "bright",
+            "pinyin": "liàng"
+        },
+        {
+            "mandarin": "暗",
+            "english": "dark",
+            "pinyin": "àn"
+        },
+        {
+            "mandarin": "长",
+            "english": "long",
+            "pinyin": "cháng"
+        },
+        {
+            "mandarin": "短",
+            "english": "short",
+            "pinyin": "duǎn"
+        },
+        {
+            "mandarin": "宽",
+            "english": "wide",
+            "pinyin": "kuān"
+        },
+        {
+            "mandarin": "窄",
+            "english": "narrow",
+            "pinyin": "zhǎi"
+        },
+        {
+            "mandarin": "厚",
+            "english": "thick",
+            "pinyin": "hòu"
+        },
+        {
+            "mandarin": "薄",
+            "english": "thin",
+            "pinyin": "bó"
+        },
+        {
+            "mandarin": "硬",
+            "english": "hard",
+            "pinyin": "yìng"
+        },
+        {
+            "mandarin": "软",
+            "english": "soft",
+            "pinyin": "ruǎn"
+        }
+    ]
+}
