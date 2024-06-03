@@ -1,6 +1,6 @@
 export async function fetchVocabulary() {
   try {
-    const response = await fetch('../data/vocabulary.json');
+    const response = await fetch('data/vocabulary.json');
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);
     }
