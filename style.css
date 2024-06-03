@@ -62,20 +62,6 @@ th {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-    th, td {
-        padding: 6px;
-        font-size: 0.9em;
-    }
-
-    table {
-        display: block; /* Allow scrolling */
-        width: 100%;
-        overflow-x: auto;
-    }
-}
-
 /* Input search styling */
 input[type="text"] {
     width: 100%;

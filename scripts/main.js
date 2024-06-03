@@ -3,7 +3,8 @@ import { initializeToggleTable } from './toggleTable.js';
 import { addSearchFunctionality } from './search.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initializeToggleTable();
-  renderTable();
+  renderTable().then(() => {
+    initializeToggleTable();
+  });
   addSearchFunctionality();
 });

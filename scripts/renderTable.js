@@ -3,6 +3,7 @@ import { fetchVocabulary } from './fetchVocabulary.js';
 export async function renderTable() {
   try {
     const vocabulary = await fetchVocabulary();
+
     if (!vocabulary.categories) {
       throw new Error('Vocabulary data is empty or not in the expected format');
     }
@@ -11,6 +12,12 @@ export async function renderTable() {
     container.innerHTML = ''; // Clear existing tables
 
     vocabulary.categories.forEach(category => {
+      // Add an h2 tag for the category name
+      const caption = document.createElement('h2');
+      caption.textContent = category.name;
+      caption.classList.add('toggle-header'); // Add a class for toggling
+      container.appendChild(caption);
+
       const table = document.createElement('table');
       table.innerHTML = `
         <thead>
@@ -23,11 +30,9 @@ export async function renderTable() {
         <tbody id="${category.id}TableBody">
         </tbody>
       `;
-      const caption = document.createElement('caption');
-      caption.innerText = category.name;
-      table.prepend(caption);
 
       const tableBody = table.querySelector(`#${category.id}TableBody`);
+
       category.data.forEach(word => {
         const row = document.createElement('tr');
         row.innerHTML = `<td>${word.mandarin}</td><td>${word.english}</td><td>${word.pinyin}</td>`;
@@ -36,6 +41,7 @@ export async function renderTable() {
 
       container.appendChild(table);
     });
+
   } catch (error) {
     console.error('Failed to render table:', error);
   }
