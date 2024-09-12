@@ -1,6 +1,6 @@
 import { fetchVocabulary } from './fetchVocabulary.js';
 
-export async function renderTable() {
+export async function renderTable(toggleFlashCards) {
   try {
     const vocabulary = await fetchVocabulary();
 
@@ -12,13 +12,13 @@ export async function renderTable() {
     container.innerHTML = ''; // Clear existing tables
 
     vocabulary.forEach(category => {
-      // Add an h2 tag for the category name
       const caption = document.createElement('h2');
       caption.textContent = category.name;
-      caption.classList.add('toggle-header'); // Add a class for toggling
+      caption.classList.add('toggle-header');
       container.appendChild(caption);
 
       const table = document.createElement('table');
+      table.id = `${category.id}Table`;
       table.innerHTML = `
         <thead>
           <tr>
@@ -27,11 +27,11 @@ export async function renderTable() {
             <th>Pinyin</th>
           </tr>
         </thead>
-        <tbody id="${category.id}TableBody">
+        <tbody>
         </tbody>
       `;
 
-      const tableBody = table.querySelector(`#${category.id}TableBody`);
+      const tableBody = table.querySelector('tbody');
 
       category.data.forEach(word => {
         const row = document.createElement('tr');
@@ -42,7 +42,15 @@ export async function renderTable() {
       container.appendChild(table);
     });
 
+    // Add single flashcard button
+    const flashcardButton = document.createElement('button');
+    flashcardButton.textContent = 'Practice Flashcards';
+    flashcardButton.classList.add('flashcard-button');
+    flashcardButton.addEventListener('click', () => toggleFlashCards());
+    container.appendChild(flashcardButton);
+
   } catch (error) {
     console.error('Failed to render table:', error);
   }
 }
+

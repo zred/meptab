@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mandarin English Pinyin Tables</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/static/style.css">
   <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
@@ -23,6 +23,16 @@
       <!-- Search results will be dynamically added here -->
     </tbody>
   </table>
+  <div id="flashCardContainer" class="hidden">
+    <div id="flashCard"></div>
+    <div class="flashcard-controls">
+      <select id="categorySelector"></select>
+      <button id="flipCard">Flip</button>
+      <button id="nextCard">Next</button>
+      <button id="speakCard">Speak</button>
+      <button id="closeFlashCards">Close</button>
+    </div>
+  </div>
   <div id="tablesContainer"></div>
 </body>
 </html>

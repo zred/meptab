@@ -4,27 +4,31 @@
 
 /* Base styles */
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
     background-color: #121212;
     color: #E0E0E0;
     margin: 0;
-    padding: 20px;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 h1, h2 {
     color: #BB86FC;
     cursor: pointer;
     user-select: none;
+    font-size: 1.5rem;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 1rem 0;
     background-color: #1F1F1F;
     display: none; /* Initially hide all tables */
     transition: all 0.3s ease;
     overflow-x: auto; /* Make tables scrollable horizontally */
+    font-size: 1rem;
 }
 
 /* Table row hover and striping */
@@ -65,18 +69,136 @@ th {
 /* Input search styling */
 input[type="text"] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
     box-sizing: border-box;
     border: 2px solid #BB86FC;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     background-color: #121212;
     color: #E0E0E0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus {
     border-color: #3700B3;
     outline: none;
+}
+
+/* Flash Card Styles */
+#flashCardContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#flashCardContainer.hidden {
+    display: none;
+}
+
+#flashCard {
+    width: 80%;
+    height: 60%;
+    border: 2px solid #BB86FC;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #E0E0E0;
+    background-color: #1F1F1F;
+    box-shadow: 0 0 1.25rem rgba(187, 134, 252, 0.3);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+}
+
+.flashcard-controls {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flashcard-controls button,
+.flashcard-controls select {
+    margin: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.flashcard-controls button:hover,
+.flashcard-controls select:hover {
+    background-color: #3700B3;
+    color: #E0E0E0;
+}
+
+.flashcard-button {
+    margin-top: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.flashcard-button:hover {
+    background-color: #3700B3;
+    color: #E0E0E0;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle-content {
+    display: none;
+}
+
+.flashcard-button-placeholder {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #flashCard {
+        font-size: 2rem;
+    }
+
+    .flashcard-controls button,
+    .flashcard-controls select,
+    .flashcard-button {
+        font-size: 0.875rem;
+    }
 }
