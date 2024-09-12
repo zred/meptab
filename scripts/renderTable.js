@@ -18,14 +18,17 @@ export async function renderTable(toggleFlashCards) {
     flashcardButton.addEventListener('click', () => toggleFlashCards());
     container.appendChild(flashcardButton);
 
-    vocabulary.forEach(category => {
+    // Get unique contexts
+    const contexts = [...new Set(vocabulary.flatMap(word => word.contexts))];
+
+    contexts.forEach(context => {
       const caption = document.createElement('h2');
-      caption.textContent = category.name;
+      caption.textContent = context;
       caption.classList.add('toggle-header');
       container.appendChild(caption);
 
       const table = document.createElement('table');
-      table.id = `${category.id}Table`;
+      table.id = `${context}Table`;
       table.innerHTML = `
         <thead>
           <tr>
@@ -40,10 +43,12 @@ export async function renderTable(toggleFlashCards) {
 
       const tableBody = table.querySelector('tbody');
 
-      category.data.forEach(word => {
-        const row = document.createElement('tr');
-        row.innerHTML = `<td>${word.mandarin}</td><td>${word.english}</td><td>${word.pinyin}</td>`;
-        tableBody.appendChild(row);
+      vocabulary.forEach(word => {
+        if (word.contexts.includes(context)) {
+          const row = document.createElement('tr');
+          row.innerHTML = `<td>${word.mandarin}</td><td>${word.english}</td><td>${word.pinyin}</td>`;
+          tableBody.appendChild(row);
+        }
       });
 
       container.appendChild(table);

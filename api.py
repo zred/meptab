@@ -28,19 +28,16 @@ async def read_index():
 @app.get("/api/vocabulary")
 async def get_vocabulary():
     data_dir = "data"
-    vocabulary = []
+    vocabulary_file = "vocabulary.json"
 
-    # Read the list of data files
-    with open(os.path.join(data_dir, "dataFiles.json"), "r") as f:
-        data_files = json.load(f)
-
-    # Read each data file and add its contents to the vocabulary list
-    for file_name in data_files:
-        with open(os.path.join(data_dir, file_name), "r", encoding="utf-8") as f:
-            category_data = json.load(f)
-            vocabulary.append(category_data)
-
-    return vocabulary
+    try:
+        with open(os.path.join(data_dir, vocabulary_file), "r", encoding="utf-8") as f:
+            vocabulary = json.load(f)
+        return vocabulary
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Vocabulary file not found")
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail="Error decoding vocabulary file")
 
 if __name__ == "__main__":
     import uvicorn
