@@ -1,4 +1,4 @@
-import { FlashCardManager } from './FlashCardManager.js';
+import { FlashCardManager } from './flashCardManager.js';
 
 export async function initializeFlashCards() {
   const elements = {
