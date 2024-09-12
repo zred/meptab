@@ -25,6 +25,10 @@ app.mount("/static", StaticFiles(directory="."), name="static")
 async def read_index():
     return FileResponse("index.html")
 
+@app.get("/favicon.ico")
+async def read_favicon():
+    return FileResponse("favicon.ico")
+
 @app.get("/api/vocabulary")
 async def get_vocabulary():
     data_dir = "data"

@@ -1,3 +1,5 @@
+import { initializeSpeech } from './speechSynthesis.js';
+
 export async function initializeFlashCards() {
     const elements = {
         container: document.getElementById('flashCardContainer'),
@@ -15,42 +17,10 @@ export async function initializeFlashCards() {
         currentVocabulary: []
     };
 
-    const speech = {
-        synth: window.speechSynthesis,
-        voices: [],
-        chineseVoice: null,
-        setVoices: function() {
-            this.voices = this.synth.getVoices();
-            this.chineseVoice = this.voices.find(voice => voice.lang.includes('zh'));
-        },
-        speak: function(text, isEnglish) {
-            const utterance = new SpeechSynthesisUtterance(text);
-            if (this.voices.length === 0) {
-                this.setVoices(); // Try to set voices again if they weren't loaded initially
-            }
-            utterance.voice = isEnglish ? null : this.chineseVoice;
-            utterance.lang = isEnglish ? 'en-US' : 'zh-CN';
-            this.synth.speak(utterance);
-        }
-    };
+    let speech;
 
-    // Function to initialize voices
-    function initializeVoices() {
-        return new Promise((resolve) => {
-            if (speech.synth.getVoices().length > 0) {
-                speech.setVoices();
-                resolve();
-            } else {
-                speech.synth.onvoiceschanged = () => {
-                    speech.setVoices();
-                    resolve();
-                };
-            }
-        });
-    }
-
-    // Initialize voices
-    await initializeVoices();
+    // Initialize speech
+    speech = await initializeSpeech();
 
     function getRandomCard() {
         return state.currentVocabulary[Math.floor(Math.random() * state.currentVocabulary.length)];
