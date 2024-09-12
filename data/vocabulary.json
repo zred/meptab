@@ -2098,5 +2098,217 @@
     "contexts": [
       "weather"
     ]
+  },
+  {
+    "mandarin": "狗",
+    "english": "dog",
+    "pinyin": "gǒu",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "猫",
+    "english": "cat",
+    "pinyin": "māo",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "鸟",
+    "english": "bird",
+    "pinyin": "niǎo",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "鱼",
+    "english": "fish",
+    "pinyin": "yú",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "熊",
+    "english": "bear",
+    "pinyin": "xióng",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "老虎",
+    "english": "tiger",
+    "pinyin": "lǎohǔ",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "大象",
+    "english": "elephant",
+    "pinyin": "dàxiàng",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "长颈鹿",
+    "english": "giraffe",
+    "pinyin": "chángjǐnglù",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "猴子",
+    "english": "monkey",
+    "pinyin": "hóuzi",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "兔子",
+    "english": "rabbit",
+    "pinyin": "tùzi",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "鼠",
+    "english": "rat",
+    "pinyin": "shǔ",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "牛",
+    "english": "ox",
+    "pinyin": "niú",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "龙",
+    "english": "dragon",
+    "pinyin": "lóng",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "蛇",
+    "english": "snake",
+    "pinyin": "shé",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "马",
+    "english": "horse",
+    "pinyin": "mǎ",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "羊",
+    "english": "goat",
+    "pinyin": "yáng",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "鸡",
+    "english": "rooster",
+    "pinyin": "jī",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "猪",
+    "english": "pig",
+    "pinyin": "zhū",
+    "contexts": [
+      "animals",
+      "zodiac"
+    ]
+  },
+  {
+    "mandarin": "狮子",
+    "english": "lion",
+    "pinyin": "shīzi",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "狼",
+    "english": "wolf",
+    "pinyin": "láng",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "鹿",
+    "english": "deer",
+    "pinyin": "lù",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "鳄鱼",
+    "english": "crocodile",
+    "pinyin": "èyú",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "企鹅",
+    "english": "penguin",
+    "pinyin": "qǐ'é",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "蝴蝶",
+    "english": "butterfly",
+    "pinyin": "húdié",
+    "contexts": [
+      "animals"
+    ]
+  },
+  {
+    "mandarin": "蜜蜂",
+    "english": "bee",
+    "pinyin": "mìfēng",
+    "contexts": [
+      "animals"
+    ]
   }
 ]
