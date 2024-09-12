@@ -101,6 +101,56 @@
             "mandarin": "软",
             "english": "soft",
             "pinyin": "ruǎn"
+        },
+        {
+            "mandarin": "干净",
+            "english": "clean",
+            "pinyin": "gānjìng"
+        },
+        {
+            "mandarin": "肮脏",
+            "english": "dirty",
+            "pinyin": "āngzāng"
+        },
+        {
+            "mandarin": "安静",
+            "english": "quiet",
+            "pinyin": "ānjìng"
+        },
+        {
+            "mandarin": "吵闹",
+            "english": "noisy",
+            "pinyin": "chǎonào"
+        },
+        {
+            "mandarin": "简单",
+            "english": "simple",
+            "pinyin": "jiǎndān"
+        },
+        {
+            "mandarin": "复杂",
+            "english": "complex",
+            "pinyin": "fùzá"
+        },
+        {
+            "mandarin": "便宜",
+            "english": "cheap",
+            "pinyin": "piányi"
+        },
+        {
+            "mandarin": "昂贵",
+            "english": "expensive",
+            "pinyin": "ángguì"
+        },
+        {
+            "mandarin": "健康",
+            "english": "healthy",
+            "pinyin": "jiànkāng"
+        },
+        {
+            "mandarin": "有害",
+            "english": "harmful",
+            "pinyin": "yǒuhài"
         }
     ]
 }

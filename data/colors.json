@@ -101,6 +101,51 @@
             "mandarin": "紫红",
             "english": "magenta",
             "pinyin": "zǐhóng"
+        },
+        {
+            "mandarin": "灰",
+            "english": "gray",
+            "pinyin": "huī"
+        },
+        {
+            "mandarin": "金",
+            "english": "gold",
+            "pinyin": "jīn"
+        },
+        {
+            "mandarin": "银",
+            "english": "silver",
+            "pinyin": "yín"
+        },
+        {
+            "mandarin": "青",
+            "english": "cyan",
+            "pinyin": "qīng"
+        },
+        {
+            "mandarin": "米色",
+            "english": "beige",
+            "pinyin": "mǐsè"
+        },
+        {
+            "mandarin": "栗色",
+            "english": "maroon",
+            "pinyin": "lìsè"
+        },
+        {
+            "mandarin": "靛蓝",
+            "english": "indigo",
+            "pinyin": "diàn lán"
+        },
+        {
+            "mandarin": "绯红",
+            "english": "scarlet",
+            "pinyin": "fēihóng"
+        },
+        {
+            "mandarin": "翠绿",
+            "english": "emerald green",
+            "pinyin": "cuì lǜ"
         }
     ]
 }

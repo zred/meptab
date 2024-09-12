@@ -101,6 +101,56 @@
             "mandarin": "枣",
             "english": "date",
             "pinyin": "zǎo"
+        },
+        {
+            "mandarin": "李子",
+            "english": "plum",
+            "pinyin": "lǐzi"
+        },
+        {
+            "mandarin": "杏",
+            "english": "apricot",
+            "pinyin": "xìng"
+        },
+        {
+            "mandarin": "山竹",
+            "english": "mangosteen",
+            "pinyin": "shānzhú"
+        },
+        {
+            "mandarin": "火龙果",
+            "english": "dragon fruit",
+            "pinyin": "huǒlóngguǒ"
+        },
+        {
+            "mandarin": "荔枝",
+            "english": "lychee",
+            "pinyin": "lìzhī"
+        },
+        {
+            "mandarin": "柚子",
+            "english": "pomelo",
+            "pinyin": "yòuzi"
+        },
+        {
+            "mandarin": "杨梅",
+            "english": "bayberry",
+            "pinyin": "yángméi"
+        },
+        {
+            "mandarin": "柿子",
+            "english": "persimmon",
+            "pinyin": "shìzi"
+        },
+        {
+            "mandarin": "榴莲",
+            "english": "durian",
+            "pinyin": "liúlián"
+        },
+        {
+            "mandarin": "桑葚",
+            "english": "mulberry",
+            "pinyin": "sāngshèn"
         }
     ]
 }

@@ -1,35 +1,39 @@
 import json
+import os
 
-# Load the current JSON file
-with open('vocabulary.json', 'r', encoding='utf-8') as file:
-    current_data = json.load(file)
+# List of current JSON files (excluding dataFiles.json)
+json_files = [
+    "actions.json", "colors.json", "fruits.json", "landforms.json",
+    "polar_descriptors.json", "positions.json", "textures.json",
+    "vegetables.json", "weather.json"
+]
 
-# New JSON structure template
-new_data = {
-    "categories": []
-}
+# New vocabulary structure
+new_vocabulary = []
 
-# Mapping of old table names to new category IDs and names
-table_mapping = {
-    "positionsTable": {"id": "positions", "name": "Positions and Directions"},
-    "colorsTable": {"id": "colors", "name": "Colors"},
-    "polarDescriptorsTable": {"id": "polar_descriptors", "name": "Polar Descriptors"},
-    "actionsTable": {"id": "actions", "name": "Actions"},
-    "texturesTable": {"id": "textures", "name": "Textures"},
-    "landformsTable": {"id": "landforms", "name": "Landforms"}
-}
+# Function to add a word to the new vocabulary
+def add_word(word, context):
+    existing_word = next((item for item in new_vocabulary if item["mandarin"] == word["mandarin"]), None)
+    if existing_word:
+        if context not in existing_word["contexts"]:
+            existing_word["contexts"].append(context)
+    else:
+        word["contexts"] = [context]
+        new_vocabulary.append(word)
 
-# Iterate over each table and convert to the new structure
-for table_name, category_info in table_mapping.items():
-    if table_name in current_data:
-        new_data["categories"].append({
-            "id": category_info["id"],
-            "name": category_info["name"],
-            "data": current_data[table_name]
-        })
+# Process each JSON file
+for file_name in json_files:
+    with open(file_name, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+        context = data["id"]
+        for word in data["data"]:
+            add_word(word, context)
 
-# Save the new JSON structure to a file
-with open('new_vocabulary.json', 'w', encoding='utf-8') as file:
-    json.dump(new_data, file, ensure_ascii=False, indent=2)
+# Sort the vocabulary by mandarin characters
+new_vocabulary.sort(key=lambda x: x["mandarin"])
 
-print('Conversion complete. New JSON saved to new_vocabulary.json')
+# Save the new vocabulary to a file
+with open('vocabulary.json', 'w', encoding='utf-8') as file:
+    json.dump(new_vocabulary, file, ensure_ascii=False, indent=2)
+
+print("Conversion complete. New vocabulary saved to vocabulary.json")

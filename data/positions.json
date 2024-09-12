@@ -186,6 +186,51 @@
             "mandarin": "相反",
             "english": "opposite",
             "pinyin": "xiāngfǎn"
+        },
+        {
+            "mandarin": "斜对面",
+            "english": "diagonal",
+            "pinyin": "xiéduìmiàn"
+        },
+        {
+            "mandarin": "周围",
+            "english": "surrounding",
+            "pinyin": "zhōuwéi"
+        },
+        {
+            "mandarin": "正中央",
+            "english": "dead center",
+            "pinyin": "zhèngzhōngyāng"
+        },
+        {
+            "mandarin": "侧面",
+            "english": "side",
+            "pinyin": "cèmiàn"
+        },
+        {
+            "mandarin": "背面",
+            "english": "back side",
+            "pinyin": "bèimiàn"
+        },
+        {
+            "mandarin": "正面",
+            "english": "front side",
+            "pinyin": "zhèngmiàn"
+        },
+        {
+            "mandarin": "垂直",
+            "english": "vertical",
+            "pinyin": "chuízhí"
+        },
+        {
+            "mandarin": "水平",
+            "english": "horizontal",
+            "pinyin": "shuǐpíng"
+        },
+        {
+            "mandarin": "对角",
+            "english": "diagonal",
+            "pinyin": "duìjiǎo"
         }
     ]
 }

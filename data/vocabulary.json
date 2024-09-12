@@ -1,0 +1,2102 @@
+[
+  {
+    "mandarin": "上",
+    "english": "top",
+    "pinyin": "shàng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "上面",
+    "english": "above",
+    "pinyin": "shàngmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "下",
+    "english": "bottom",
+    "pinyin": "xià",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "下面",
+    "english": "below",
+    "pinyin": "xiàmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "丘陵",
+    "english": "hill",
+    "pinyin": "qiūlíng",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "丝滑",
+    "english": "silky",
+    "pinyin": "sī huá",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "中",
+    "english": "center",
+    "pinyin": "zhōng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "中间",
+    "english": "middle",
+    "pinyin": "zhōngjiān",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "亮",
+    "english": "bright",
+    "pinyin": "liàng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "低",
+    "english": "low",
+    "pinyin": "dī",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "侧",
+    "english": "side",
+    "pinyin": "cè",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "侧面",
+    "english": "side",
+    "pinyin": "cèmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "便宜",
+    "english": "cheap",
+    "pinyin": "piányi",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "健康",
+    "english": "healthy",
+    "pinyin": "jiànkāng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "光亮",
+    "english": "shiny",
+    "pinyin": "guāngliàng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "光泽",
+    "english": "glossy",
+    "pinyin": "guāngzé",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "光滑",
+    "english": "smooth",
+    "pinyin": "guānghuá",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "内部",
+    "english": "inside",
+    "pinyin": "nèibù",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "写",
+    "english": "write",
+    "pinyin": "xiě",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "冬瓜",
+    "english": "winter melon",
+    "pinyin": "dōngguā",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "冰川",
+    "english": "glacier",
+    "pinyin": "bīngchuān",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "冰雹",
+    "english": "hail",
+    "pinyin": "bīngbáo",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "冷",
+    "english": "cold",
+    "pinyin": "lěng",
+    "contexts": [
+      "polar_descriptors",
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "凉爽",
+    "english": "cool",
+    "pinyin": "liángshuǎng",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "凹凸不平",
+    "english": "uneven",
+    "pinyin": "āotū bùpíng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "前景",
+    "english": "foreground",
+    "pinyin": "qiánjǐng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "半岛",
+    "english": "peninsula",
+    "pinyin": "bàndǎo",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "南瓜",
+    "english": "pumpkin",
+    "pinyin": "nánguā",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "卷心菜",
+    "english": "cabbage",
+    "pinyin": "juǎnxīncài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "厚",
+    "english": "thick",
+    "pinyin": "hòu",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "台风",
+    "english": "typhoon",
+    "pinyin": "táifēng",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "右",
+    "english": "right",
+    "pinyin": "yòu",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "右上角",
+    "english": "top right corner",
+    "pinyin": "yòu shàngjiǎo",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "右下角",
+    "english": "bottom right corner",
+    "pinyin": "yòu xiàjiǎo",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "吃",
+    "english": "eat",
+    "pinyin": "chī",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "听",
+    "english": "listen",
+    "pinyin": "tīng",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "吵闹",
+    "english": "noisy",
+    "pinyin": "chǎonào",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "周围",
+    "english": "surrounding",
+    "pinyin": "zhōuwéi",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "唱歌",
+    "english": "sing",
+    "pinyin": "chànggē",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "喝",
+    "english": "drink",
+    "pinyin": "hē",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "土豆",
+    "english": "potato",
+    "pinyin": "tǔdòu",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "在上面",
+    "english": "on the top",
+    "pinyin": "zài shàngmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "在下面",
+    "english": "at the bottom",
+    "pinyin": "zài xiàmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "在中心",
+    "english": "at the center",
+    "pinyin": "zài zhōngxīn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "在中间",
+    "english": "in the middle",
+    "pinyin": "zài zhōngjiān",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "在侧面",
+    "english": "on the side",
+    "pinyin": "zài cèmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "在边缘",
+    "english": "on the edge",
+    "pinyin": "zài biānyuán",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "在（某物）附近",
+    "english": "near (something)",
+    "pinyin": "zài (mǒu wù) fùjìn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "坐",
+    "english": "sit",
+    "pinyin": "zuò",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "坚硬",
+    "english": "solid",
+    "pinyin": "jiānyìng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "垂直",
+    "english": "vertical",
+    "pinyin": "chuízhí",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "复杂",
+    "english": "complex",
+    "pinyin": "fùzá",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "外部",
+    "english": "outside",
+    "pinyin": "wàibù",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "多孔",
+    "english": "porous",
+    "pinyin": "duōkǒng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "大",
+    "english": "big",
+    "pinyin": "dà",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "安静",
+    "english": "quiet",
+    "pinyin": "ānjìng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "宽",
+    "english": "wide",
+    "pinyin": "kuān",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "寒冷",
+    "english": "freezing cold",
+    "pinyin": "hánlěng",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "对角",
+    "english": "diagonal",
+    "pinyin": "duìjiǎo",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "小",
+    "english": "small",
+    "pinyin": "xiǎo",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "山",
+    "english": "mountain",
+    "pinyin": "shān",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "山竹",
+    "english": "mangosteen",
+    "pinyin": "shānzhú",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "山谷",
+    "english": "valley",
+    "pinyin": "shāngǔ",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "岛",
+    "english": "island",
+    "pinyin": "dǎo",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "峡谷",
+    "english": "canyon",
+    "pinyin": "xiágǔ",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "峭壁",
+    "english": "cliff",
+    "pinyin": "qiàobì",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "峰",
+    "english": "peak",
+    "pinyin": "fēng",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "左",
+    "english": "left",
+    "pinyin": "zuǒ",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "左上角",
+    "english": "top left corner",
+    "pinyin": "zuǒ shàngjiǎo",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "左下角",
+    "english": "bottom left corner",
+    "pinyin": "zuǒ xiàjiǎo",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "干净",
+    "english": "clean",
+    "pinyin": "gānjìng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "干燥",
+    "english": "dry",
+    "pinyin": "gānzào",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "平原",
+    "english": "plain",
+    "pinyin": "píngyuán",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "平滑",
+    "english": "sleek",
+    "pinyin": "pínghuá",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "底部",
+    "english": "bottom",
+    "pinyin": "dǐbù",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "弹性",
+    "english": "elastic",
+    "pinyin": "tánxìng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "微笑",
+    "english": "smile",
+    "pinyin": "wēixiào",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "微风",
+    "english": "breeze",
+    "pinyin": "wēifēng",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "快",
+    "english": "fast",
+    "pinyin": "kuài",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "慢",
+    "english": "slow",
+    "pinyin": "màn",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "打喷嚏",
+    "english": "sneeze",
+    "pinyin": "dǎ pēntì",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "打电话",
+    "english": "make a phone call",
+    "pinyin": "dǎ diànhuà",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "拍照",
+    "english": "take a photo",
+    "pinyin": "pāizhào",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "斜对面",
+    "english": "diagonal",
+    "pinyin": "xiéduìmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "无花果",
+    "english": "fig",
+    "pinyin": "wúhuāguǒ",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "昂贵",
+    "english": "expensive",
+    "pinyin": "ángguì",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "晴天",
+    "english": "sunny",
+    "pinyin": "qíngtiān",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "暗",
+    "english": "dark",
+    "pinyin": "àn",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "暴风雨",
+    "english": "storm",
+    "pinyin": "bàofēngyǔ",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "有害",
+    "english": "harmful",
+    "pinyin": "yǒuhài",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "有弹性",
+    "english": "springy",
+    "pinyin": "yǒu tánxìng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "李子",
+    "english": "plum",
+    "pinyin": "lǐzi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "杏",
+    "english": "apricot",
+    "pinyin": "xìng",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "杨梅",
+    "english": "bayberry",
+    "pinyin": "yángméi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "松软",
+    "english": "spongy",
+    "pinyin": "sōngruǎn",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "枣",
+    "english": "date",
+    "pinyin": "zǎo",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "柔软",
+    "english": "pliable",
+    "pinyin": "róuruǎn",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "柚子",
+    "english": "pomelo",
+    "pinyin": "yòuzi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "柠檬",
+    "english": "lemon",
+    "pinyin": "níngméng",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "柿子",
+    "english": "persimmon",
+    "pinyin": "shìzi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "栗色",
+    "english": "maroon",
+    "pinyin": "lìsè",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "桃子",
+    "english": "peach",
+    "pinyin": "táozi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "桑葚",
+    "english": "mulberry",
+    "pinyin": "sāngshèn",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "梨",
+    "english": "pear",
+    "pinyin": "lí",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "棕",
+    "english": "brown",
+    "pinyin": "zōng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "森林",
+    "english": "forest",
+    "pinyin": "sēnlín",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "椰子",
+    "english": "coconut",
+    "pinyin": "yēzi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "榴莲",
+    "english": "durian",
+    "pinyin": "liúlián",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "樱桃",
+    "english": "cherry",
+    "pinyin": "yīngtáo",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "橄榄绿",
+    "english": "olive green",
+    "pinyin": "gǎnlǎnlǜ",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "橘子",
+    "english": "tangerine",
+    "pinyin": "júzi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "橙",
+    "english": "orange",
+    "pinyin": "chéng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "橙子",
+    "english": "orange",
+    "pinyin": "chéngzi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "正中央",
+    "english": "dead center",
+    "pinyin": "zhèngzhōngyāng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "正面",
+    "english": "front side",
+    "pinyin": "zhèngmiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "毛茸茸",
+    "english": "furry",
+    "pinyin": "máoróngróng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "气候",
+    "english": "climate",
+    "pinyin": "qìhòu",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "气温",
+    "english": "temperature",
+    "pinyin": "qìwēn",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "水平",
+    "english": "horizontal",
+    "pinyin": "shuǐpíng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "沙滩",
+    "english": "beach",
+    "pinyin": "shātān",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "沙漠",
+    "english": "desert",
+    "pinyin": "shāmò",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "河",
+    "english": "river",
+    "pinyin": "hé",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "沼泽",
+    "english": "swamp",
+    "pinyin": "zhǎozé",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "泥滩",
+    "english": "mudflat",
+    "pinyin": "nítān",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "洋葱",
+    "english": "onion",
+    "pinyin": "yángcōng",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "洞穴",
+    "english": "cave",
+    "pinyin": "dòngxué",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "浅蓝",
+    "english": "light blue",
+    "pinyin": "qiǎnlán",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "海",
+    "english": "sea",
+    "pinyin": "hǎi",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "海岸",
+    "english": "coast",
+    "pinyin": "hǎi'àn",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "深红",
+    "english": "dark red",
+    "pinyin": "shēnhóng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "温暖",
+    "english": "warm",
+    "pinyin": "wēnnuǎn",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "游泳",
+    "english": "swim",
+    "pinyin": "yóuyǒng",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "湖",
+    "english": "lake",
+    "pinyin": "hú",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "湿",
+    "english": "wet",
+    "pinyin": "shī",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "湿度",
+    "english": "humidity",
+    "pinyin": "shīdù",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "滑",
+    "english": "slide",
+    "pinyin": "huá",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "滑溜",
+    "english": "slippery",
+    "pinyin": "huáliu",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "瀑布",
+    "english": "waterfall",
+    "pinyin": "pùbù",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "火山",
+    "english": "volcano",
+    "pinyin": "huǒshān",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "火龙果",
+    "english": "dragon fruit",
+    "pinyin": "huǒlóngguǒ",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "灰",
+    "english": "gray",
+    "pinyin": "huī",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "热",
+    "english": "hot",
+    "pinyin": "rè",
+    "contexts": [
+      "polar_descriptors",
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "烹饪",
+    "english": "cook",
+    "pinyin": "pēngrèn",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "爬",
+    "english": "climb",
+    "pinyin": "pá",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "爬行",
+    "english": "crawl",
+    "pinyin": "páxíng",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "猕猴桃",
+    "english": "kiwi",
+    "pinyin": "míhóutáo",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "玉米",
+    "english": "corn",
+    "pinyin": "yùmǐ",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "生菜",
+    "english": "lettuce",
+    "pinyin": "shēngcài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "画画",
+    "english": "draw",
+    "pinyin": "huàhuà",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "白",
+    "english": "white",
+    "pinyin": "bái",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "盆地",
+    "english": "basin",
+    "pinyin": "péndì",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "相反",
+    "english": "opposite",
+    "pinyin": "xiāngfǎn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "看",
+    "english": "look",
+    "pinyin": "kàn",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "睡觉",
+    "english": "sleep",
+    "pinyin": "shuìjiào",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "短",
+    "english": "short",
+    "pinyin": "duǎn",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "石榴",
+    "english": "pomegranate",
+    "pinyin": "shíliú",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "硬",
+    "english": "hard",
+    "pinyin": "yìng",
+    "contexts": [
+      "polar_descriptors",
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "礁石",
+    "english": "reef",
+    "pinyin": "jiāoshí",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "窄",
+    "english": "narrow",
+    "pinyin": "zhǎi",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "站",
+    "english": "stand",
+    "pinyin": "zhàn",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "竹笋",
+    "english": "bamboo shoots",
+    "pinyin": "zhúsǔn",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "简单",
+    "english": "simple",
+    "pinyin": "jiǎndān",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "米色",
+    "english": "beige",
+    "pinyin": "mǐsè",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "粉红",
+    "english": "pink",
+    "pinyin": "fěnhóng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "粗糙",
+    "english": "rough",
+    "pinyin": "cūcāo",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "粘",
+    "english": "sticky",
+    "pinyin": "nián",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "紫",
+    "english": "purple",
+    "pinyin": "zǐ",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "紫红",
+    "english": "magenta",
+    "pinyin": "zǐhóng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "红",
+    "english": "red",
+    "pinyin": "hóng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "红薯",
+    "english": "sweet potato",
+    "pinyin": "hóngshǔ",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "细腻",
+    "english": "fine",
+    "pinyin": "xìnì",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "绒毛状",
+    "english": "fluffy",
+    "pinyin": "róngmáo zhuàng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "绯红",
+    "english": "scarlet",
+    "pinyin": "fēihóng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "绿",
+    "english": "green",
+    "pinyin": "lǜ",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "绿洲",
+    "english": "oasis",
+    "pinyin": "lǜzhōu",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "翠绿",
+    "english": "emerald green",
+    "pinyin": "cuì lǜ",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "肮脏",
+    "english": "dirty",
+    "pinyin": "āngzāng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "背景",
+    "english": "background",
+    "pinyin": "bèijǐng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "背面",
+    "english": "back side",
+    "pinyin": "bèimiàn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "胡萝卜",
+    "english": "carrot",
+    "pinyin": "húluóbo",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "脆",
+    "english": "crunchy",
+    "pinyin": "cuì",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "芒果",
+    "english": "mango",
+    "pinyin": "mángguǒ",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "芦笋",
+    "english": "asparagus",
+    "pinyin": "lúsǔn",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "花菜",
+    "english": "cauliflower",
+    "pinyin": "huācài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "芹菜",
+    "english": "celery",
+    "pinyin": "qíncài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "苦瓜",
+    "english": "bitter melon",
+    "pinyin": "kǔguā",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "苹果",
+    "english": "apple",
+    "pinyin": "píngguǒ",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "茄子",
+    "english": "eggplant",
+    "pinyin": "qiézi",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "草原",
+    "english": "grassland",
+    "pinyin": "cǎoyuán",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "草莓",
+    "english": "strawberry",
+    "pinyin": "cǎoméi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "荔枝",
+    "english": "lychee",
+    "pinyin": "lìzhī",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "荠菜",
+    "english": "shepherd's purse",
+    "pinyin": "jìcài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "莲藕",
+    "english": "lotus root",
+    "pinyin": "liánoǔ",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "莴苣",
+    "english": "romaine lettuce",
+    "pinyin": "wōjù",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "菠菜",
+    "english": "spinach",
+    "pinyin": "bōcài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "菠萝",
+    "english": "pineapple",
+    "pinyin": "bōluó",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "萝卜",
+    "english": "radish",
+    "pinyin": "luóbo",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "葡萄",
+    "english": "grape",
+    "pinyin": "pútáo",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "葡萄柚",
+    "english": "grapefruit",
+    "pinyin": "pútáoyòu",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "蓝",
+    "english": "blue",
+    "pinyin": "lán",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "蓝莓",
+    "english": "blueberry",
+    "pinyin": "lánméi",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "薄",
+    "english": "thin",
+    "pinyin": "bó",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "蘑菇",
+    "english": "mushroom",
+    "pinyin": "mógu",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "褐",
+    "english": "brown",
+    "pinyin": "hè",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "西兰花",
+    "english": "broccoli",
+    "pinyin": "xīlánhuā",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "西瓜",
+    "english": "watermelon",
+    "pinyin": "xīguā",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "西红柿",
+    "english": "tomato",
+    "pinyin": "xīhóngshì",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "角",
+    "english": "corner",
+    "pinyin": "jiǎo",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "说",
+    "english": "speak",
+    "pinyin": "shuō",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "读",
+    "english": "read",
+    "pinyin": "dú",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "豆芽",
+    "english": "bean sprouts",
+    "pinyin": "dòuyá",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "豆角",
+    "english": "green beans",
+    "pinyin": "dòujiǎo",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "豌豆",
+    "english": "pea",
+    "pinyin": "wāndòu",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "走",
+    "english": "walk",
+    "pinyin": "zǒu",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "起床",
+    "english": "get up",
+    "pinyin": "qǐchuáng",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "起皱",
+    "english": "wrinkled",
+    "pinyin": "qǐzhòu",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "跑",
+    "english": "run",
+    "pinyin": "pǎo",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "跳",
+    "english": "jump",
+    "pinyin": "tiào",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "跳舞",
+    "english": "dance",
+    "pinyin": "tiàowǔ",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "躺",
+    "english": "lie down",
+    "pinyin": "tǎng",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "软",
+    "english": "soft",
+    "pinyin": "ruǎn",
+    "contexts": [
+      "polar_descriptors",
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "轻",
+    "english": "light (weight)",
+    "pinyin": "qīng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "辣椒",
+    "english": "chili pepper",
+    "pinyin": "làjiāo",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "边缘",
+    "english": "edge",
+    "pinyin": "biānyuán",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "近",
+    "english": "near",
+    "pinyin": "jìn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "近旁",
+    "english": "nearby",
+    "pinyin": "jìnpáng",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "远",
+    "english": "far",
+    "pinyin": "yuǎn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "远处",
+    "english": "distant",
+    "pinyin": "yuǎnchù",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "远离（某物）",
+    "english": "far from (something)",
+    "pinyin": "yuǎnlí (mǒu wù)",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "酷热",
+    "english": "scorching hot",
+    "pinyin": "kùrè",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "重",
+    "english": "heavy",
+    "pinyin": "zhòng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "金",
+    "english": "gold",
+    "pinyin": "jīn",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "银",
+    "english": "silver",
+    "pinyin": "yín",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "长",
+    "english": "long",
+    "pinyin": "cháng",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "闪电",
+    "english": "lightning",
+    "pinyin": "shǎndiàn",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "闷热",
+    "english": "muggy",
+    "pinyin": "mènrè",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "阴天",
+    "english": "cloudy",
+    "pinyin": "yīntiān",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "阵雨",
+    "english": "shower",
+    "pinyin": "zhènyǔ",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "雨天",
+    "english": "rainy",
+    "pinyin": "yǔtiān",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "雪天",
+    "english": "snowy",
+    "pinyin": "xuětiān",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "雷",
+    "english": "thunder",
+    "pinyin": "léi",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "雷阵雨",
+    "english": "thunderstorm",
+    "pinyin": "léizhènyǔ",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "雾",
+    "english": "foggy",
+    "pinyin": "wù",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "雾霾",
+    "english": "smog",
+    "pinyin": "wùmái",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "霜冻",
+    "english": "frost",
+    "pinyin": "shuāngdòng",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "青",
+    "english": "cyan",
+    "pinyin": "qīng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "青椒",
+    "english": "green pepper",
+    "pinyin": "qīngjiāo",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "靛蓝",
+    "english": "indigo",
+    "pinyin": "diàn lán",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "靠近",
+    "english": "close to",
+    "pinyin": "kàojìn",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "韭菜",
+    "english": "chives",
+    "pinyin": "jiǔcài",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "顶部",
+    "english": "top",
+    "pinyin": "dǐngbù",
+    "contexts": [
+      "positions"
+    ]
+  },
+  {
+    "mandarin": "颗粒状",
+    "english": "grainy",
+    "pinyin": "kēlì zhuàng",
+    "contexts": [
+      "textures"
+    ]
+  },
+  {
+    "mandarin": "风",
+    "english": "windy",
+    "pinyin": "fēng",
+    "contexts": [
+      "weather"
+    ]
+  },
+  {
+    "mandarin": "飞",
+    "english": "fly",
+    "pinyin": "fēi",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "香蕉",
+    "english": "banana",
+    "pinyin": "xiāngjiāo",
+    "contexts": [
+      "fruits"
+    ]
+  },
+  {
+    "mandarin": "骑自行车",
+    "english": "ride a bicycle",
+    "pinyin": "qí zìxíngchē",
+    "contexts": [
+      "actions"
+    ]
+  },
+  {
+    "mandarin": "高",
+    "english": "high",
+    "pinyin": "gāo",
+    "contexts": [
+      "polar_descriptors"
+    ]
+  },
+  {
+    "mandarin": "高原",
+    "english": "plateau",
+    "pinyin": "gāoyuán",
+    "contexts": [
+      "landforms"
+    ]
+  },
+  {
+    "mandarin": "黄",
+    "english": "yellow",
+    "pinyin": "huáng",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "黄瓜",
+    "english": "cucumber",
+    "pinyin": "huángguā",
+    "contexts": [
+      "vegetables"
+    ]
+  },
+  {
+    "mandarin": "黑",
+    "english": "black",
+    "pinyin": "hēi",
+    "contexts": [
+      "colors"
+    ]
+  },
+  {
+    "mandarin": "龙卷风",
+    "english": "tornado",
+    "pinyin": "lóngjuǎnfēng",
+    "contexts": [
+      "weather"
+    ]
+  }
+]

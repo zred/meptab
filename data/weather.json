@@ -101,6 +101,56 @@
             "mandarin": "气候",
             "english": "climate",
             "pinyin": "qìhòu"
+        },
+        {
+            "mandarin": "阴天",
+            "english": "overcast",
+            "pinyin": "yīntiān"
+        },
+        {
+            "mandarin": "雷阵雨",
+            "english": "thunderstorm",
+            "pinyin": "léizhènyǔ"
+        },
+        {
+            "mandarin": "酷热",
+            "english": "scorching hot",
+            "pinyin": "kùrè"
+        },
+        {
+            "mandarin": "寒冷",
+            "english": "freezing cold",
+            "pinyin": "hánlěng"
+        },
+        {
+            "mandarin": "微风",
+            "english": "breeze",
+            "pinyin": "wēifēng"
+        },
+        {
+            "mandarin": "暴风雨",
+            "english": "storm",
+            "pinyin": "bàofēngyǔ"
+        },
+        {
+            "mandarin": "霜冻",
+            "english": "frost",
+            "pinyin": "shuāngdòng"
+        },
+        {
+            "mandarin": "闷热",
+            "english": "muggy",
+            "pinyin": "mènrè"
+        },
+        {
+            "mandarin": "龙卷风",
+            "english": "tornado",
+            "pinyin": "lóngjuǎnfēng"
+        },
+        {
+            "mandarin": "雾霾",
+            "english": "smog",
+            "pinyin": "wùmái"
         }
     ]
 }

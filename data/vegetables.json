@@ -101,6 +101,56 @@
             "mandarin": "豌豆",
             "english": "pea",
             "pinyin": "wāndòu"
+        },
+        {
+            "mandarin": "萝卜",
+            "english": "radish",
+            "pinyin": "luóbo"
+        },
+        {
+            "mandarin": "韭菜",
+            "english": "chives",
+            "pinyin": "jiǔcài"
+        },
+        {
+            "mandarin": "莴苣",
+            "english": "romaine lettuce",
+            "pinyin": "wōjù"
+        },
+        {
+            "mandarin": "豆芽",
+            "english": "bean sprouts",
+            "pinyin": "dòuyá"
+        },
+        {
+            "mandarin": "冬瓜",
+            "english": "winter melon",
+            "pinyin": "dōngguā"
+        },
+        {
+            "mandarin": "苦瓜",
+            "english": "bitter melon",
+            "pinyin": "kǔguā"
+        },
+        {
+            "mandarin": "竹笋",
+            "english": "bamboo shoots",
+            "pinyin": "zhúsǔn"
+        },
+        {
+            "mandarin": "芦笋",
+            "english": "asparagus",
+            "pinyin": "lúsǔn"
+        },
+        {
+            "mandarin": "荠菜",
+            "english": "shepherd's purse",
+            "pinyin": "jìcài"
+        },
+        {
+            "mandarin": "莲藕",
+            "english": "lotus root",
+            "pinyin": "liánoǔ"
         }
     ]
 }

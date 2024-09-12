@@ -101,6 +101,56 @@
             "mandarin": "读",
             "english": "read",
             "pinyin": "dú"
+        },
+        {
+            "mandarin": "跳舞",
+            "english": "dance",
+            "pinyin": "tiàowǔ"
+        },
+        {
+            "mandarin": "唱歌",
+            "english": "sing",
+            "pinyin": "chànggē"
+        },
+        {
+            "mandarin": "画画",
+            "english": "draw",
+            "pinyin": "huàhuà"
+        },
+        {
+            "mandarin": "烹饪",
+            "english": "cook",
+            "pinyin": "pēngrèn"
+        },
+        {
+            "mandarin": "游泳",
+            "english": "swim",
+            "pinyin": "yóuyǒng"
+        },
+        {
+            "mandarin": "骑自行车",
+            "english": "ride a bicycle",
+            "pinyin": "qí zìxíngchē"
+        },
+        {
+            "mandarin": "打电话",
+            "english": "make a phone call",
+            "pinyin": "dǎ diànhuà"
+        },
+        {
+            "mandarin": "拍照",
+            "english": "take a photo",
+            "pinyin": "pāizhào"
+        },
+        {
+            "mandarin": "打喷嚏",
+            "english": "sneeze",
+            "pinyin": "dǎ pēntì"
+        },
+        {
+            "mandarin": "微笑",
+            "english": "smile",
+            "pinyin": "wēixiào"
         }
     ]
 }

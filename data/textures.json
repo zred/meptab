@@ -86,6 +86,56 @@
             "mandarin": "平滑",
             "english": "sleek",
             "pinyin": "pínghuá"
+        },
+        {
+            "mandarin": "凹凸不平",
+            "english": "uneven",
+            "pinyin": "āotū bùpíng"
+        },
+        {
+            "mandarin": "多孔",
+            "english": "porous",
+            "pinyin": "duōkǒng"
+        },
+        {
+            "mandarin": "绒毛状",
+            "english": "fluffy",
+            "pinyin": "róngmáo zhuàng"
+        },
+        {
+            "mandarin": "弹性",
+            "english": "elastic",
+            "pinyin": "tánxìng"
+        },
+        {
+            "mandarin": "坚硬",
+            "english": "solid",
+            "pinyin": "jiānyìng"
+        },
+        {
+            "mandarin": "松软",
+            "english": "spongy",
+            "pinyin": "sōngruǎn"
+        },
+        {
+            "mandarin": "细腻",
+            "english": "fine",
+            "pinyin": "xìnì"
+        },
+        {
+            "mandarin": "起皱",
+            "english": "wrinkled",
+            "pinyin": "qǐzhòu"
+        },
+        {
+            "mandarin": "粗糙",
+            "english": "coarse",
+            "pinyin": "cūcāo"
+        },
+        {
+            "mandarin": "有弹性",
+            "english": "springy",
+            "pinyin": "yǒu tánxìng"
         }
     ]
 }

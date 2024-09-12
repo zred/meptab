@@ -101,6 +101,56 @@
             "mandarin": "沙滩",
             "english": "beach",
             "pinyin": "shātān"
+        },
+        {
+            "mandarin": "沙漠",
+            "english": "desert",
+            "pinyin": "shāmò"
+        },
+        {
+            "mandarin": "绿洲",
+            "english": "oasis",
+            "pinyin": "lǜzhōu"
+        },
+        {
+            "mandarin": "峡谷",
+            "english": "canyon",
+            "pinyin": "xiágǔ"
+        },
+        {
+            "mandarin": "冰川",
+            "english": "glacier",
+            "pinyin": "bīngchuān"
+        },
+        {
+            "mandarin": "洞穴",
+            "english": "cave",
+            "pinyin": "dòngxué"
+        },
+        {
+            "mandarin": "泥滩",
+            "english": "mudflat",
+            "pinyin": "nítān"
+        },
+        {
+            "mandarin": "礁石",
+            "english": "reef",
+            "pinyin": "jiāoshí"
+        },
+        {
+            "mandarin": "盆地",
+            "english": "basin",
+            "pinyin": "péndì"
+        },
+        {
+            "mandarin": "丘陵",
+            "english": "hills",
+            "pinyin": "qiūlíng"
+        },
+        {
+            "mandarin": "峰",
+            "english": "peak",
+            "pinyin": "fēng"
         }
     ]
 }
