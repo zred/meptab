@@ -4,8 +4,12 @@ import { initializeToggleTable } from './toggleTable.js';
 import { initializeFlashCards } from './flashCards.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const toggleFlashCards = await initializeFlashCards();
-    await renderTable(toggleFlashCards);
-    addSearchFunctionality();
-    initializeToggleTable();
+    try {
+        const toggleFlashCards = await initializeFlashCards();
+        await renderTable(toggleFlashCards);
+        await addSearchFunctionality();
+        await initializeToggleTable();
+    } catch (error) {
+        console.error('Failed to initialize application:', error);
+    }
 });
