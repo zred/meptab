@@ -11,6 +11,13 @@ export async function renderTable(toggleFlashCards) {
     const container = document.getElementById('tablesContainer');
     container.innerHTML = ''; // Clear existing tables
 
+    // Add flashcard button at the top
+    const flashcardButton = document.createElement('button');
+    flashcardButton.textContent = 'Practice Flashcards';
+    flashcardButton.classList.add('flashcard-button');
+    flashcardButton.addEventListener('click', () => toggleFlashCards());
+    container.appendChild(flashcardButton);
+
     vocabulary.forEach(category => {
       const caption = document.createElement('h2');
       caption.textContent = category.name;
@@ -41,13 +48,6 @@ export async function renderTable(toggleFlashCards) {
 
       container.appendChild(table);
     });
-
-    // Add single flashcard button
-    const flashcardButton = document.createElement('button');
-    flashcardButton.textContent = 'Practice Flashcards';
-    flashcardButton.classList.add('flashcard-button');
-    flashcardButton.addEventListener('click', () => toggleFlashCards());
-    container.appendChild(flashcardButton);
 
   } catch (error) {
     console.error('Failed to render table:', error);

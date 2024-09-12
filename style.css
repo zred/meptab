@@ -152,21 +152,28 @@ input[type="text"]:focus {
 }
 
 .flashcard-button {
-    margin-top: 0.625rem;
-    padding: 0.625rem 1.25rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     background-color: #BB86FC;
     color: #121212;
     border: none;
-    border-radius: 0.3125rem;
-    transition: background-color 0.3s;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.2s;
     font-family: 'Noto Sans SC', sans-serif;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .flashcard-button:hover {
     background-color: #3700B3;
     color: #E0E0E0;
+    transform: translateY(-2px);
 }
 
 button {

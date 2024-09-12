@@ -76,9 +76,12 @@ export async function initializeFlashCards() {
 
     function toggleFlashCards() {
         if (elements.container.classList.contains('hidden')) {
+            ensureCategory();
+            if (state.currentVocabulary.length === 0) {
+                alert("No vocabulary available for the selected category.");
+                return;
+            }
             elements.container.classList.remove('hidden');
-            updateCategorySelector();
-            updateCurrentVocabulary();
             updateCard();
         } else {
             elements.container.classList.add('hidden');
@@ -89,10 +92,12 @@ export async function initializeFlashCards() {
         elements.categorySelector.innerHTML = '';
         const tables = document.querySelectorAll('table');
         tables.forEach(table => {
-            const option = document.createElement('option');
-            option.value = table.id;
-            option.textContent = table.previousElementSibling.textContent;
-            elements.categorySelector.appendChild(option);
+            if (table.id !== 'searchResultsTable') {  // Exclude search results table
+                const option = document.createElement('option');
+                option.value = table.id;
+                option.textContent = table.previousElementSibling.textContent;
+                elements.categorySelector.appendChild(option);
+            }
         });
     }
 
@@ -105,7 +110,25 @@ export async function initializeFlashCards() {
                 english: row.cells[1].textContent,
                 pinyin: row.cells[2].textContent
             }));
+        } else {
+            state.currentVocabulary = [];
         }
+    }
+
+    function ensureCategory() {
+        if (elements.categorySelector.options.length === 0) {
+            updateCategorySelector();
+        }
+        if (elements.categorySelector.value === '') {
+            // Find the first non-search category
+            for (let i = 0; i < elements.categorySelector.options.length; i++) {
+                if (elements.categorySelector.options[i].value !== 'searchResultsTable') {
+                    elements.categorySelector.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+        updateCurrentVocabulary();
     }
 
     // Event listeners
