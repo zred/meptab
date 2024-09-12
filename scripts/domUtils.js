@@ -5,12 +5,16 @@ export function createElement(tag, attributes = {}, textContent = '') {
   return element;
 }
 
-export function clearElement(element) {
+export async function clearElement(element) {
   while (element.firstChild) {
+    await new Promise(resolve => setTimeout(resolve, 0)); // Yield to event loop
     element.removeChild(element.firstChild);
   }
 }
 
-export function appendChildren(parent, ...children) {
-  children.forEach(child => parent.appendChild(child));
+export async function appendChildren(parent, ...children) {
+  for (const child of children) {
+    await new Promise(resolve => setTimeout(resolve, 0)); // Yield to event loop
+    parent.appendChild(child);
+  }
 }

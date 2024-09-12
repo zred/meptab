@@ -17,7 +17,7 @@ export async function addSearchFunctionality() {
   }
 
   async function clearSearchResults() {
-    clearElement(searchResultsTableBody);
+    await clearElement(searchResultsTableBody);
   }
 
   async function searchTables(query) {
@@ -27,8 +27,8 @@ export async function addSearchFunctionality() {
     for (const table of tables) {
       const rows = table.querySelectorAll('tr');
       for (const row of rows) {
-        if (rowMatchesQuery(row, query)) {
-          addUniqueResult(uniqueResults, row);
+        if (await rowMatchesQuery(row, query)) {
+          await addUniqueResult(uniqueResults, row);
         }
       }
     }
@@ -36,11 +36,17 @@ export async function addSearchFunctionality() {
     return uniqueResults;
   }
 
-  function rowMatchesQuery(row, query) {
-    return Array.from(row.children).some(cell => cell.textContent.toLowerCase().includes(query));
+  async function rowMatchesQuery(row, query) {
+    for (const cell of row.children) {
+      if (cell.textContent.toLowerCase().includes(query)) {
+        return true;
+      }
+      await new Promise(resolve => setTimeout(resolve, 0)); // Yield to event loop
+    }
+    return false;
   }
 
-  function addUniqueResult(uniqueResults, row) {
+  async function addUniqueResult(uniqueResults, row) {
     const mandarin = row.children[0].textContent;
     if (!uniqueResults.has(mandarin)) {
       uniqueResults.set(mandarin, row);
@@ -49,11 +55,11 @@ export async function addSearchFunctionality() {
 
   async function displaySearchResults(uniqueResults) {
     const fragment = document.createDocumentFragment();
-    uniqueResults.forEach((row) => {
+    for (const row of uniqueResults.values()) {
       const newRow = row.cloneNode(true);
-      fragment.appendChild(newRow);
-    });
-    searchResultsTableBody.appendChild(fragment);
+      await appendChildren(fragment, newRow);
+    }
+    await appendChildren(searchResultsTableBody, fragment);
   }
 }
 

@@ -29,78 +29,93 @@ export class FlashCardManager {
     });
   }
 
-  getRandomCard() {
-    return this.state.currentVocabulary[Math.floor(Math.random() * this.state.currentVocabulary.length)];
+  async getRandomCard() {
+    if (this.state.currentVocabulary.length === 0) {
+      return null;
+    }
+    const randomIndex = Math.floor(Math.random() * this.state.currentVocabulary.length);
+    return this.state.currentVocabulary[randomIndex];
   }
 
-  updateCard() {
-    this.state.currentCard = this.getRandomCard();
-    this.state.isFlipped = false;
-    this.elements.card.textContent = this.state.currentCard.mandarin;
+  async updateCard() {
+    this.state.currentCard = await this.getRandomCard();
+    if (this.state.currentCard) {
+      this.state.isFlipped = false;
+      this.elements.card.textContent = this.state.currentCard.mandarin;
+    } else {
+      this.elements.card.textContent = "No cards available";
+    }
   }
 
-  flipCard() {
+  async flipCard() {
+    if (!this.state.currentCard) return;
+    
     this.state.isFlipped = !this.state.isFlipped;
     this.elements.card.textContent = this.state.isFlipped 
       ? `${this.state.currentCard.english} (${this.state.currentCard.pinyin})` 
       : this.state.currentCard.mandarin;
+    await new Promise(resolve => setTimeout(resolve, 0)); // Yield to event loop
   }
 
-  speakCard() {
+  async speakCard() {
+    if (!this.state.currentCard) return;
+    
     const textToSpeak = this.state.isFlipped ? this.state.currentCard.english : this.state.currentCard.mandarin;
-    this.speech.speak(textToSpeak, this.state.isFlipped);
+    await this.speech.speak(textToSpeak, this.state.isFlipped);
   }
 
-  showFlashCards() {
-    this.ensureCategory();
+  async showFlashCards() {
+    await this.ensureCategory();
     if (this.state.currentVocabulary.length === 0) {
       alert("No vocabulary available for the selected category.");
       return;
     }
     this.elements.container.classList.remove('hidden');
-    this.updateCard();
+    await this.updateCard();
   }
 
   hideFlashCards() {
     this.elements.container.classList.add('hidden');
   }
 
-  toggleFlashCards() {
+  async toggleFlashCards() {
     if (this.elements.container.classList.contains('hidden')) {
-      this.showFlashCards();
+      await this.showFlashCards();
     } else {
       this.hideFlashCards();
     }
   }
 
-  updateCategorySelector() {
-    clearElement(this.elements.categorySelector);
+  async updateCategorySelector() {
+    await clearElement(this.elements.categorySelector);
     const tables = document.querySelectorAll('table');
-    tables.forEach(table => {
+    for (const table of tables) {
       if (table.id !== 'searchResultsTable') {
         const option = createElement('option', { value: table.id }, table.previousElementSibling.textContent);
-        this.elements.categorySelector.appendChild(option);
+        await appendChildren(this.elements.categorySelector, option);
       }
-    });
+    }
   }
 
-  updateCurrentVocabulary() {
+  async updateCurrentVocabulary() {
     const selectedTableId = this.elements.categorySelector.value;
     const table = document.getElementById(selectedTableId);
     if (table) {
-      this.state.currentVocabulary = Array.from(table.querySelectorAll('tbody tr')).map(row => ({
-        mandarin: row.cells[0].textContent,
-        english: row.cells[1].textContent,
-        pinyin: row.cells[2].textContent
-      }));
+      this.state.currentVocabulary = await Promise.all(
+        Array.from(table.querySelectorAll('tbody tr')).map(async row => ({
+          mandarin: row.cells[0].textContent,
+          english: row.cells[1].textContent,
+          pinyin: row.cells[2].textContent
+        }))
+      );
     } else {
       this.state.currentVocabulary = [];
     }
   }
 
-  ensureCategory() {
+  async ensureCategory() {
     if (this.elements.categorySelector.options.length === 0) {
-      this.updateCategorySelector();
+      await this.updateCategorySelector();
     }
     if (this.elements.categorySelector.value === '') {
       for (let i = 0; i < this.elements.categorySelector.options.length; i++) {
@@ -110,6 +125,6 @@ export class FlashCardManager {
         }
       }
     }
-    this.updateCurrentVocabulary();
+    await this.updateCurrentVocabulary();
   }
 }
