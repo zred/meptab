@@ -20,6 +20,7 @@ async def get_vocabulary(vocabulary_service: VocabularyService = Depends()):
         vocabulary = await vocabulary_service.get_all_vocabulary()
         return vocabulary
     except Exception as e:
+        print(f"Error in get_vocabulary: {str(e)}")  # Add this line for debugging
         raise HTTPException(status_code=500, detail=f"An error occurred while fetching vocabulary: {str(e)}")
 
 @router.post("/api/upload_vocabulary")

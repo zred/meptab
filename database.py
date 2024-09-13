@@ -8,6 +8,7 @@ engine = create_async_engine(DATABASE_URL, echo=True, future=True)
 async def create_db_and_tables():
     async with engine.begin() as conn:
         await conn.run_sync(SQLModel.metadata.create_all)
+    print("Database and tables created successfully")
 
 async def get_session() -> AsyncSession:
     async_session = sessionmaker(

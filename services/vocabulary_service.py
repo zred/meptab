@@ -8,18 +8,24 @@ class VocabularyService:
         self.session = session
 
     async def get_all_vocabulary(self):
-        vocabulary = await self.session.exec(select(Vocabulary))
-        return vocabulary.all()
+        try:
+            async with self.session as session:
+                result = await session.execute(select(Vocabulary))
+                return result.scalars().all()
+        except Exception as e:
+            print(f"Error in get_all_vocabulary: {str(e)}")  # Add this line for debugging
+            raise
 
     async def create_vocabulary(self, vocabulary_list: list[VocabularyCreate]):
-        for new_word in vocabulary_list:
-            existing_word = await self.session.exec(select(Vocabulary).where(Vocabulary.mandarin == new_word.mandarin))
-            existing_word = existing_word.first()
-            if existing_word:
-                existing_word.contexts = list(set(existing_word.contexts + new_word.contexts))
-                existing_word.english = new_word.english
-                existing_word.pinyin = new_word.pinyin
-            else:
-                new_vocabulary = Vocabulary(**new_word.dict())
-                self.session.add(new_vocabulary)
-        await self.session.commit()
+        async with self.session as session:
+            for new_word in vocabulary_list:
+                result = await session.execute(select(Vocabulary).where(Vocabulary.mandarin == new_word.mandarin))
+                existing_word = result.scalar_one_or_none()
+                if existing_word:
+                    existing_word.contexts = list(set(existing_word.contexts + new_word.contexts))
+                    existing_word.english = new_word.english
+                    existing_word.pinyin = new_word.pinyin
+                else:
+                    new_vocabulary = Vocabulary(**new_word.dict())
+                    session.add(new_vocabulary)
+            await session.commit()

@@ -22,7 +22,7 @@ app.mount("/static", StaticFiles(directory="."), name="static")
 
 @app.on_event("startup")
 async def on_startup():
-    create_db_and_tables()
+    await create_db_and_tables()
 
 # Include the router
 app.include_router(router)

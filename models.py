@@ -12,22 +12,20 @@ class VocabularyBase(SQLModel):
 
     @validator('mandarin')
     def validate_mandarin(cls, v):
-        if not re.match(r'^[\u4e00-\u9fff]+$', v):
-            raise ValueError('Mandarin must contain only Chinese characters')
+        if not v.strip():
+            raise ValueError('Mandarin field cannot be empty')
         return v
 
     @validator('english')
     def validate_english(cls, v):
-        if not re.match(r'^[a-zA-Z\s\-()]+$', v):
-            raise ValueError('English must contain only Latin characters, spaces, hyphens, and parentheses')
+        if not v.strip():
+            raise ValueError('English field cannot be empty')
         return v
 
     @validator('pinyin')
     def validate_pinyin(cls, v):
-        if not re.match(r'^[a-zA-Z\s]+$', v):
-            raise ValueError('Pinyin must contain only Latin characters and spaces')
-        if not all(char in 'āáǎàēéěèīíǐìōóǒòūúǔùüǖǘǚǜ' or char.isalpha() or char.isspace() for char in v):
-            raise ValueError('Pinyin must use valid tone marks')
+        if not v.strip():
+            raise ValueError('Pinyin field cannot be empty')
         return v
 
     @validator('contexts')
