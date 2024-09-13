@@ -2,12 +2,13 @@ from typing import List
 from sqlmodel import SQLModel, Field
 from pydantic import validator
 import re
+from sqlalchemy import Column, JSON
 
 class VocabularyBase(SQLModel):
     mandarin: str
     english: str
     pinyin: str
-    contexts: List[str]
+    contexts: List[str] = Field(sa_column=Column(JSON))
 
     @validator('mandarin')
     def validate_mandarin(cls, v):
