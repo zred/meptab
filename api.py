@@ -1,19 +1,18 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-import json
-import os
+from database import create_db_and_tables
+from routes import router
 
 app = FastAPI()
 
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Mount the static files directory
@@ -21,27 +20,12 @@ app.mount("/scripts", StaticFiles(directory="scripts"), name="scripts")
 app.mount("/data", StaticFiles(directory="data"), name="data")
 app.mount("/static", StaticFiles(directory="."), name="static")
 
-@app.get("/")
-async def read_index():
-    return FileResponse("index.html")
+@app.on_event("startup")
+async def on_startup():
+    create_db_and_tables()
 
-@app.get("/favicon.ico")
-async def read_favicon():
-    return FileResponse("favicon.ico")
-
-@app.get("/api/vocabulary")
-async def get_vocabulary():
-    data_dir = "data"
-    vocabulary_file = "vocabulary.json"
-
-    try:
-        with open(os.path.join(data_dir, vocabulary_file), "r", encoding="utf-8") as f:
-            vocabulary = json.load(f)
-        return vocabulary
-    except FileNotFoundError:
-        raise HTTPException(status_code=404, detail="Vocabulary file not found")
-    except json.JSONDecodeError:
-        raise HTTPException(status_code=500, detail="Error decoding vocabulary file")
+# Include the router
+app.include_router(router)
 
 if __name__ == "__main__":
     import uvicorn
