@@ -3,8 +3,14 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from database import create_db_and_tables
 from routes import router
+from contextlib import asynccontextmanager
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await create_db_and_tables()
+    yield
+
+app = FastAPI(lifespan=lifespan)
 
 # Add CORS middleware
 app.add_middleware(
@@ -19,10 +25,6 @@ app.add_middleware(
 app.mount("/scripts", StaticFiles(directory="scripts"), name="scripts")
 app.mount("/data", StaticFiles(directory="data"), name="data")
 app.mount("/static", StaticFiles(directory="."), name="static")
-
-@app.on_event("startup")
-async def on_startup():
-    await create_db_and_tables()
 
 # Include the router
 app.include_router(router)
