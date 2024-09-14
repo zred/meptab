@@ -1,13 +1,16 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.templating import Jinja2Templates
 from database import create_db_and_tables
 from routes import router
 from contextlib import asynccontextmanager
+from cache import init_redis
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await create_db_and_tables()
+    await init_redis()
     yield
 
 app = FastAPI(lifespan=lifespan)
@@ -24,10 +27,16 @@ app.add_middleware(
 # Mount the static files directory
 app.mount("/scripts", StaticFiles(directory="scripts"), name="scripts")
 app.mount("/data", StaticFiles(directory="data"), name="data")
-app.mount("/static", StaticFiles(directory="."), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Initialize Jinja2Templates
+templates = Jinja2Templates(directory="templates")
 
 # Include the router
 app.include_router(router)
+
+# Add templates to app state
+app.state.templates = templates
 
 if __name__ == "__main__":
     import uvicorn

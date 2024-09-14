@@ -1,14 +1,17 @@
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException, Depends, Request
 from fastapi.responses import FileResponse
+from fastapi.templating import Jinja2Templates
 from typing import List
 from models import VocabularyCreate
 from services.vocabulary_service import VocabularyService
 
 router = APIRouter()
 
+templates = Jinja2Templates(directory="templates")
+
 @router.get("/")
-async def read_index():
-    return FileResponse("index.html")
+async def read_index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 @router.get("/favicon.ico")
 async def read_favicon():
@@ -20,7 +23,7 @@ async def get_vocabulary(vocabulary_service: VocabularyService = Depends()):
         vocabulary = await vocabulary_service.get_all_vocabulary()
         return vocabulary
     except Exception as e:
-        print(f"Error in get_vocabulary: {str(e)}")  # Add this line for debugging
+        print(f"Error in get_vocabulary: {str(e)}")
         raise HTTPException(status_code=500, detail=f"An error occurred while fetching vocabulary: {str(e)}")
 
 @router.post("/api/upload_vocabulary")

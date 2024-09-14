@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mandarin English Pinyin Tables</title>
-  <link rel="stylesheet" href="/static/style.css">
-  <script type="module" src="scripts/main.js"></script>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
   <h1>Mandarin</h1>
   <input type="text" id="searchInput" placeholder="Search vocabulary..." />
   <h2 class="toggle-header">Search Results</h2>
@@ -34,5 +27,4 @@
     </div>
   </div>
   <div id="tablesContainer"></div>
-</body>
-</html>
+{% endblock %}
