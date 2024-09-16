@@ -14,5 +14,5 @@ export async function initializeFlashCards() {
   const flashCardManager = new FlashCardManager(elements);
   await flashCardManager.initialize();
 
-  return () => flashCardManager.toggleFlashCards();
+  return flashCardManager;
 }

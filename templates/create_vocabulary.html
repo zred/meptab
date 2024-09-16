@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="main-content">
+    <h2>Create Vocabulary</h2>
+    <form id="createVocabularyForm">
+      <input type="text" id="mandarin" name="mandarin" placeholder="Mandarin" required>
+      <input type="text" id="english" name="english" placeholder="English" required>
+      <input type="text" id="pinyin" name="pinyin" placeholder="Pinyin" required>
+      <input type="text" id="contexts" name="contexts" placeholder="Contexts (comma-separated)" required>
+      <button type="submit">Create</button>
+    </form>
+    <div id="createStatus"></div>
+  </div>
+
+  <script>
+    document.getElementById('createVocabularyForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const vocabularyData = {
+        mandarin: formData.get('mandarin'),
+        english: formData.get('english'),
+        pinyin: formData.get('pinyin'),
+        contexts: formData.get('contexts').split(',').map(context => context.trim())
+      };
+
+      try {
+        const response = await fetch('/api/upload_vocabulary', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([vocabularyData])
+        });
+
+        if (response.ok) {
+          document.getElementById('createStatus').textContent = 'Vocabulary created successfully!';
+          e.target.reset();
+        } else {
+          document.getElementById('createStatus').textContent = 'Failed to create vocabulary. Please try again.';
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        document.getElementById('createStatus').textContent = 'An error occurred. Please try again.';
+      }
+    });
+  </script>
+{% endblock %}

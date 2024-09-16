@@ -33,3 +33,11 @@ async def upload_vocabulary(vocabulary_list: List[VocabularyCreate], vocabulary_
         return {"message": "Vocabulary uploaded and merged successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"An error occurred while processing the vocabulary: {str(e)}")
+
+@router.get("/upload_vocabulary")
+async def upload_vocabulary_page(request: Request):
+    return templates.TemplateResponse("upload_vocabulary.html", {"request": request})
+
+@router.get("/create_vocabulary")
+async def create_vocabulary_page(request: Request):
+    return templates.TemplateResponse("create_vocabulary.html", {"request": request})

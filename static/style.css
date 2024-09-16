@@ -25,10 +25,13 @@ table {
     border-collapse: collapse;
     margin: 1rem 0;
     background-color: #1F1F1F;
-    display: none; /* Initially hide all tables */
     transition: all 0.3s ease;
-    overflow-x: auto; /* Make tables scrollable horizontally */
+    overflow-x: auto;
     font-size: 1rem;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Table row hover and striping */
@@ -208,4 +211,80 @@ button {
     .flashcard-button {
         font-size: 0.875rem;
     }
+}
+
+#controlsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.control-button {
+    background-color: #3700B3;
+    color: #E0E0E0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: #5600E8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3700B3;
+  padding: 1rem;
+  color: #E0E0E0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #E0E0E0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+.control-select {
+    background-color: #3700B3;
+    color: #E0E0E0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.control-select:hover {
+    background-color: #5600E8;
+}
+
+.hidden {
+    display: none;
+}
+
+h2.toggle-header {
+    color: #BB86FC;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }

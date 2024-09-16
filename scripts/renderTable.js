@@ -1,6 +1,6 @@
 import { fetchVocabulary } from './fetchVocabulary.js';
 
-export async function renderTable(toggleFlashCards) {
+export async function renderTable() {
   try {
     const vocabulary = await fetchVocabulary();
 
@@ -9,26 +9,38 @@ export async function renderTable(toggleFlashCards) {
     }
 
     const container = document.getElementById('tablesContainer');
+    if (!container) {
+      throw new Error('Tables container not found');
+    }
+
+    container.classList.remove('hidden'); // Ensure the container is not hidden
     container.innerHTML = ''; // Clear existing tables
 
-    // Add flashcard button at the top
-    const flashcardButton = document.createElement('button');
-    flashcardButton.textContent = 'Practice Flashcards';
-    flashcardButton.classList.add('flashcard-button');
-    flashcardButton.addEventListener('click', () => toggleFlashCards());
-    container.appendChild(flashcardButton);
+    const contextSelector = document.getElementById('contextSelector');
+    if (!contextSelector) {
+      throw new Error('Context selector not found');
+    }
+
+    contextSelector.innerHTML = '<option value="">Select Context</option>'; // Clear existing options
 
     // Get unique contexts
     const contexts = [...new Set(vocabulary.flatMap(word => word.contexts))];
 
     contexts.forEach(context => {
-      const caption = document.createElement('h2');
-      caption.textContent = context;
-      caption.classList.add('toggle-header');
-      container.appendChild(caption);
+      // Add context to selector
+      const option = document.createElement('option');
+      option.value = context;
+      option.textContent = context;
+      contextSelector.appendChild(option);
+
+      const heading = document.createElement('h2');
+      heading.textContent = context;
+      heading.classList.add('toggle-header', 'hidden');
+      container.appendChild(heading);
 
       const table = document.createElement('table');
       table.id = `${context}Table`;
+      table.classList.add('hidden'); // Hide table by default
       table.innerHTML = `
         <thead>
           <tr>
