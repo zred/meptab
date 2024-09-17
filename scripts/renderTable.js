@@ -1,7 +1,9 @@
 import { fetchVocabulary } from './fetchVocabulary.js';
+import { Logger, handleError } from './logger.js';
 
 export async function renderTable() {
   try {
+    Logger.log('Rendering vocabulary table');
     const vocabulary = await fetchVocabulary();
 
     if (!vocabulary || !Array.isArray(vocabulary)) {
@@ -67,7 +69,7 @@ export async function renderTable() {
     });
 
   } catch (error) {
-    console.error('Failed to render table:', error);
+    handleError(error, 'rendering table');
   }
 }
 

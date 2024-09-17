@@ -1,9 +1,11 @@
 import { renderTable } from './renderTable.js';
 import { addSearchFunctionality } from './search.js';
 import { initializeFlashCards } from './flashCards.js';
+import { Logger, handleError } from './logger.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
+        Logger.log('Application starting');
         const flashCardManager = await initializeFlashCards();
         await renderTable();
         await addSearchFunctionality();
@@ -42,6 +44,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
         }
     } catch (error) {
-        console.error('Failed to initialize application:', error);
+        handleError(error, 'application initialization');
     }
 });

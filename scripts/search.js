@@ -1,19 +1,30 @@
 import { clearElement, createElement, appendChildren } from './domUtils.js';
+import { Logger, handleError } from './logger.js';
 
 export async function addSearchFunctionality() {
   const searchInput = document.getElementById('searchInput');
   const searchResultsTableBody = document.getElementById('searchResultsTableBody');
 
+  if (!searchInput || !searchResultsTableBody) {
+    Logger.error('Search elements not found in the DOM');
+    return;
+  }
+
   searchInput.addEventListener('input', debounce(handleSearch, 300));
 
   async function handleSearch() {
-    const query = searchInput.value.toLowerCase();
-    await clearSearchResults();
+    try {
+      const query = searchInput.value.toLowerCase().trim();
+      await clearSearchResults();
 
-    if (query === '') return;
+      if (query === '') return;
 
-    const uniqueResults = await searchTables(query);
-    await displaySearchResults(uniqueResults);
+      Logger.log(`Performing search for query: ${query}`);
+      const uniqueResults = await searchTables(query);
+      await displaySearchResults(uniqueResults);
+    } catch (error) {
+      handleError(error, 'handling search');
+    }
   }
 
   async function clearSearchResults() {

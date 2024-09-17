@@ -11,6 +11,7 @@ setup(
         "Jinja2",
         "sqlmodel",
         "uvicorn",
+        "httpx",
     ],
     extras_require={
         "dev": [

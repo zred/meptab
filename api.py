@@ -6,12 +6,16 @@ from database import create_db_and_tables
 from routes import router
 from contextlib import asynccontextmanager
 from cache import init_redis
+from logging_config import log_to_endpoint, log_manager
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await create_db_and_tables()
     await init_redis()
+    await log_manager.initialize()
+    await log_to_endpoint("INFO", "Application started")
     yield
+    await log_to_endpoint("INFO", "Application shutting down")
 
 app = FastAPI(lifespan=lifespan)
 
